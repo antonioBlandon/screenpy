@@ -36,8 +36,17 @@ You could need to use python3, it depends on your python installation.
    `pip install -r requirements.txt`
 
 4. **Execute test**
+
+    `python -m pytest -v api/features/get_single_user.py --alluredir allure_report`
+
 5. **Launch report**
+
+   `allure serve allure_report`
+
 6. **Clean report**
+
+   `allure generate --clean --output allure_report`
+
 7. **Exit environment**
 
    `deactivate`
