@@ -15,6 +15,7 @@ In this repository you can find out three kind of framework uses.
 - [Virtualenv](https://virtualenv.pypa.io/en/latest/)
 - [Screenpy](https://screenpy-docs.readthedocs.io/en/latest/)
 - [Pycharm community edition](https://www.jetbrains.com/pycharm/download/#section=windows)
+- [API to test](https://reqres.in/)
 
 ## Config Project
 This repository was work on Windows, then the below configuration is focus on Windows. 
@@ -35,21 +36,22 @@ You could need to use python3, it depends on your python installation.
 
    `pip install -r requirements.txt`
 
-4. **Execute test**
-
-    `python -m pytest -v api/features/get_single_user.py --alluredir allure_report`
-
-5. **Launch report**
-
-   `allure serve allure_report`
-
-6. **Clean report**
-
-   `allure generate --clean --output allure_report`
-
-7. **Exit environment**
+4. **Exit environment**
 
    `deactivate`
 
 ## Execute Test
+
+1. **Execute a single test**
+
+    `python -m pytest -v api/features/get_single_user.py --alluredir allure_report`
+
+2. **Launch report**
+
+   `allure serve allure_report`
+
+3. **Clean report**
+
+   `allure generate --clean --output allure_report`
+   
 ## Extra documentation
