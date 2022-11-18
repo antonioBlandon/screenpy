@@ -2,3 +2,4 @@ env
 **/allure_report
 .idea
 **/.pytest_cache
+**/__pycache__

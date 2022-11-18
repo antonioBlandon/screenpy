@@ -10,7 +10,7 @@ In this repository you can find out three kind of framework uses.
 ## Project structure
 ## Tools
 
-- [Python 3.7.9](https://www.python.org/)
+- [Python 3.11.0](https://www.python.org/)
 - [Pip 22.0.4](https://pypi.org/project/pip/)
 - [Virtualenv](https://virtualenv.pypa.io/en/latest/)
 - [Screenpy](https://screenpy-docs.readthedocs.io/en/latest/)
@@ -42,15 +42,21 @@ You could need to use python3, it depends on your python installation.
 
 ## Execute Test
 
-1. **Execute a single test**
+1. **Execute test**
 
-    `python -m pytest -v api/features/get_single_user.py --alluredir allure_report`
+- **Single test**
 
-2. **Launch report**
+    `python -m pytest -v api/features/test_get_single_user.py --alluredir allure_report`
+
+- **Multiple tests**
+
+   `python -m pytest -v api/features/ --alluredir allure_report`
+
+4. **Launch report**
 
    `allure serve allure_report`
 
-3. **Clean report**
+5. **Clean report**
 
    `allure generate --clean --output allure_report`
    
